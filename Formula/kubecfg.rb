@@ -32,8 +32,8 @@ class Kubecfg < Formula
   test do
     run_output = shell_output("#{bin}/kubecf 2>&1")
     assert_match "Synchronise Kubernetes resources with config files", run_output
+  end
 
 #    version_output = shell_output("#{bin}/kubectl version --client 2>&1")
 #    assert_match "GitTreeState:\"clean\"", version_output
 #    assert_match stable.instance_variable_get(:@resource).instance_variable_get(:@specs)[:revision], version_output if build.stable?
-  end
