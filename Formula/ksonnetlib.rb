@@ -19,6 +19,17 @@ class Ksonnetlib < Formula
     libdir.install "ksonnet.beta.1"
   end
 
+  def caveats
+    libdir = (share/"ksonnet-lib")
+    s = <<-EOS.undent
+      Libraries have been made available at #{libdir}
+      Add the following to your .bash_profile:
+
+      export KUBECFG_JPATH="#{libdir}"
+    EOS
+    s
+  end
+
   test do
     run_output = shell_output("#{bin}/kubecf 2>&1")
     assert_match "Synchronise Kubernetes resources with config files", run_output
