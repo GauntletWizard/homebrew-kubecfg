@@ -2,8 +2,7 @@ class Ksonnetlib < Formula
   desc "Standard library for kubecfg"
   homepage "http://ksonnet.heptio.com/"
   url "https://github.com/ksonnet/ksonnet-lib.git",
-    :tag => "v0.1.0",
-      :revision => "d9e868667f63fe0c8c5155dc814b1d09a20dff5a"
+    :revision => "ca533c124561e2733a01dac1a1776845388a3a57"
   head "https://github.com/ksonnet/ksonnet-lib.git"
 
 #  bottle do
