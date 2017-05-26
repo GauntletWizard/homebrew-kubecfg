@@ -37,3 +37,4 @@ class Kubecfg < Formula
 #    version_output = shell_output("#{bin}/kubectl version --client 2>&1")
 #    assert_match "GitTreeState:\"clean\"", version_output
 #    assert_match stable.instance_variable_get(:@resource).instance_variable_get(:@specs)[:revision], version_output if build.stable?
+end
