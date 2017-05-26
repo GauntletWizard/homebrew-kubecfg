@@ -1,6 +1,6 @@
 class Kubecfg < Formula
   desc "Kubernetes management system based on jsonnet"
-  homepage "https://http://ksonnet.heptio.com//"
+  homepage "http://ksonnet.heptio.com/"
   url "https://github.com/ksonnet/kubecfg.git",
     :tag => "v0.1.0",
       :revision => "d9e868667f63fe0c8c5155dc814b1d09a20dff5a"
