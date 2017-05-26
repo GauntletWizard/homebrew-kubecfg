@@ -22,6 +22,8 @@ class Kubecfg < Formula
     dir.install buildpath.children - [buildpath/".brew_home"]
 
     cd dir do
+      # get deps
+      system "go", "get"
       # Make binary
       system "make", "kubecfg"
       bin.install "kubecfg"
