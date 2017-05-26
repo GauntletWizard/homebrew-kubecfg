@@ -13,8 +13,10 @@ class Ksonnetlib < Formula
 #  end
 
   def install
-    share.install "ksonnet.alpha.1"
-    share.install "ksonnet.beta.1"
+    libdir = (share/"ksonnet-lib")
+    libdir.mkpath
+    libdir.install "ksonnet.alpha.1"
+    libdir.install "ksonnet.beta.1"
   end
 
   test do
