@@ -29,8 +29,7 @@ class Kubecfg < Formula
   test do
     run_output = shell_output("#{bin}/kubecf 2>&1")
     assert_match "Synchronise Kubernetes resources with config files", run_output
+    version_output = shell_output("#{bin}/kubecfg version2>&1")
+    assert_match "kubecfg version: homebrew-" + version, version_output
   end
-
-  version_output = shell_output("#{bin}/kubecfg version2>&1")
-  assert_match "kubecfg version: homebrew-" + version, version_output
 end
