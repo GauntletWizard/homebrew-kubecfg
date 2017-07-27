@@ -2,8 +2,8 @@ class Ksonnetlib < Formula
   desc "Standard library for kubecfg"
   homepage "http://ksonnet.heptio.com/"
   url "https://github.com/ksonnet/ksonnet-lib.git",
-    :tag => "beta.1",
-    :revision => "56ad544bfcfeea417fe50eb80c49505399ee37d3"
+    :tag => "beta.2",
+    :revision => "9f6e7b23e20dc0721cec8f5933e4f8692c5a30b6"
   head "https://github.com/ksonnet/ksonnet-lib.git"
 
   def install
@@ -11,6 +11,7 @@ class Ksonnetlib < Formula
     libdir.mkpath
     libdir.install "ksonnet.alpha.1"
     libdir.install "ksonnet.beta.1"
+    libdir.install "ksonnet.beta.2"
   end
 
   def caveats
